@@ -27,7 +27,7 @@ jobs:
       - name: Build Docs
         run: |
           mkdir -p build
-          cp -r $GITHUB_WORKSPACE/* build/
+          cp -r $GITHUB_WORKSPACE/README.md build/
 
       - name: Archive Docs
         run: |
