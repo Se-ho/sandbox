@@ -19,6 +19,11 @@ jobs:
           sudo apt update
           sudo apt install -y tar
 
+      - name: Create build directory
+        run: |
+          mkdir -p $GITHUB_WORKSPACE/build
+          echo "Build directory created at: $GITHUB_WORKSPACE/build"
+          
       - name: Build Docs
         run: |
           mkdir -p build
