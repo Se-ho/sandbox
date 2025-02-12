@@ -22,7 +22,7 @@ jobs:
       - name: Build Docs
         run: |
           mkdir -p build
-          cp -r sandbox/* build/
+          cp -r $GITHUB_WORKSPACE/* build/
 
       - name: Archive Docs
         run: |
